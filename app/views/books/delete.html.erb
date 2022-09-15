@@ -1,0 +1,10 @@
+<div class="books delete">
+    <h2>Delete Book</h2>
+    <p> Are you sure you want to delete the following book? </p>
+    <p><%= @book.title %></p>
+    <%= link_to 'Destroy', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    
+</div>
+
+<%= link_to 'Homepage', books_path %>
